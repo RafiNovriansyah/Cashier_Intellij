@@ -6,7 +6,7 @@ public class Stok extends Model{
     private int stokBarang;
 
     public int getId() {
-        return id
+        return id;
     }
 
     public void setId(int id) {

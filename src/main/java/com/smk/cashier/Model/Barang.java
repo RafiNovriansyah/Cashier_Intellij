@@ -6,7 +6,7 @@ public class Barang extends Model{
     private int hargaBarang;
 
     public String getKodeBarang() {
-        return kodeBarang
+        return kodeBarang;
     }
 
     public void setKodeBarang(String kodeBarang) {
