@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb1f093-ae89-4252-be8e-86dc299e212e" name="Changes" comment="First time commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/Model/Barang.java" afterDir="false" />
+    <list default="true" id="7bb1f093-ae89-4252-be8e-86dc299e212e" name="Changes" comment="Pertemuan ke 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +26,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RafiNovriansyah"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9eb559d1-fe7d-4f29-bd3d-e3f09d4d711f" />
+        <option name="url" value="https://github.com/RafiNovriansyah/Cashier_Intellij.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -61,7 +74,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693234285192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pertemuan ke 4">
+      <option name="closed" value="true" />
+      <created>1693465580432</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693465580432</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First time commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First time commit" />
+    <MESSAGE value="Pertemuan ke 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pertemuan ke 4" />
   </component>
 </project>
