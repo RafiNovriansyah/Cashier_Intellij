@@ -33,5 +33,18 @@ class BarangServiceTest {
         mouse.setHargaBarang(100000);
         BarangService.getInstance().addBarang(mouse);
 
+        Barang LaptopGaming = new Barang();
+        LaptopGaming.setKodeBarang("B003");
+        LaptopGaming.setNamaBarang("Laptop Gaming");
+        LaptopGaming.setHargaBarang(20000000);
+        BarangService.getInstance().addBarang(LaptopGaming);
+
+    }
+
+    @Test
+    @Order(3)
+    void findByName(){
+        List<Barang> resultList = BarangService .getInstance().findByName("Laptop");
+        assertEquals(resultList.size(),2);
     }
 }
