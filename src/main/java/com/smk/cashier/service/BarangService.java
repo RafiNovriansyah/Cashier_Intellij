@@ -43,6 +43,12 @@ public class BarangService {
     }
 
     private void writeFile(){
+        try {
+            barangServiceWriter = new FileWriter("barang.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         BufferedWriter bufferedWriter = new BufferedWriter(barangServiceWriter);
         for (int i = 0; i < barangList.size(); i++) {
             Barang barang = barangList.get(i);
@@ -69,7 +75,7 @@ public class BarangService {
             }
         }
 
-        private <string> Barang parsingLineToBarang(String string) {
+        private Barang parsingLineToBarang(String string) {
             StringTokenizer st = new StringTokenizer(string, "|");
             int id = 0;
             Barang barang = new Barang();
