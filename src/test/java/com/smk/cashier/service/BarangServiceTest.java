@@ -14,7 +14,7 @@ class BarangServiceTest {
     @Order(2)
     void getBarangList() {
         List<Barang> barangList = BarangService.getInstance().getBarangList();
-        assertEquals(barangList.size(),2);
+        assertEquals(barangList.size(),3);
 
     }
 
