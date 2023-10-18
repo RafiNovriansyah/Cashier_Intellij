@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb1f093-ae89-4252-be8e-86dc299e212e" name="Changes" comment="FUCK YOU NIGGGEEERRRR PERTEMUAN-9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/BarangDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/JdbcConnection.java" afterDir="false" />
+    <list default="true" id="7bb1f093-ae89-4252-be8e-86dc299e212e" name="Changes" comment="Membuat barangdao pertemuan-9">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/StokDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/BarangDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/BarangDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/smk/cashier/service/BarangServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/smk/cashier/service/BarangServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="pertemuan-9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,10 +58,26 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pertemuan-9&quot;
+    &quot;git-widget-placeholder&quot;: &quot;pertemuan-10&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.com.smk.cashier.service in Cashier_6">
+    <configuration name="BarangServiceTest.getDataById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cashier_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.smk.cashier.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
+      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
+      <option name="METHOD_NAME" value="getDataById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BarangServiceTest.saveBarangToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cashier_6" />
       <extension name="coverage">
@@ -80,8 +94,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.smk.cashier.service in Cashier_6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cashier_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.smk.cashier.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.smk.cashier.service in Cashier_6" />
+        <item itemvalue="JUnit.BarangServiceTest.getDataById" />
         <item itemvalue="JUnit.BarangServiceTest.saveBarangToDatabase" />
       </list>
     </recent_temporary>
@@ -111,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693465580432</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Membuat barangdao pertemuan-9">
+      <option name="closed" value="true" />
+      <created>1697009796316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697009796316</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +167,7 @@
     <MESSAGE value="First time commit" />
     <MESSAGE value="Pertemuan ke 4" />
     <MESSAGE value="FUCK YOU NIGGGEEERRRR PERTEMUAN-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="FUCK YOU NIGGGEEERRRR PERTEMUAN-9" />
+    <MESSAGE value="Membuat barangdao pertemuan-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Membuat barangdao pertemuan-9" />
   </component>
 </project>

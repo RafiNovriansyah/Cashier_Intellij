@@ -1,69 +1,69 @@
 package com.smk.cashier.dao;
 
-import com.smk.cashier.Model.Barang;
+import com.smk.cashier.Model.Stok;
 
 import java.sql.*;
 import java.util.Collection;
 import java.util.Objects;
 import java.util.Optional;
 
-public class BarangDao implements Dao<Barang, Integer> {
+public class StokDao implements Dao<Stok, Integer> {
     private final Optional<Connection> connection;
 
-    public BarangDao() {
+    public StokDao() {
         connection = JdbcConnection.getConnection();
     }
 
     @Override
-    public Optional<Barang> get(int id) {
+    public Optional<Stok> get(int id) {
         return connection.flatMap(conn -> {
-            Optional<Barang> barang = Optional.empty();
-            String sql = "SELECT * from barang where barang_id = ?";
+            Optional<Stok> stok = Optional.empty();
+            String sql = "SELECT * from stok where id = ?";
             try {
                 PreparedStatement ps = conn.prepareStatement(sql);
                 ps.setInt(1, id);
                 ResultSet rs = ps.executeQuery();
                 if (rs.next()) {
+                    int Id = rs.getInt("id");
                     String kodeBarang = rs.getString("kode_barang");
-                    String namaBarang = rs.getString("nama_barang");
-                    int hargaBarang = rs.getInt("harga_barang");
-                    Barang barangResult = new Barang();
+                    int stokBarang = rs.getInt("stok_barang");
+                    Stok barangResult = new Stok();
+                    barangResult.setId(Id);
                     barangResult.setKodeBarang(kodeBarang);
-                    barangResult.setNamaBarang(namaBarang);
-                    barangResult.setHargaBarang(hargaBarang);
+                    barangResult.setStokBarang(stokBarang);
 
-                    barang = Optional.of(barangResult);
+                    stok = Optional.of(barangResult);
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            return barang;
+            return stok;
         });
 
     }
 
     @Override
-    public Collection<Barang> getAll() {
+    public Collection<Stok> getAll() {
         return null;
     }
 
     @Override
-    public Optional<Integer> save(Barang barang) {
-        Barang nonNullBarang = Objects.requireNonNull(barang);
+    public Optional<Integer> save(Stok stok) {
+        Stok nonNullStok = Objects.requireNonNull(stok);
         String query =
-                "INSERT INTO Barang(kode_barang, nama_barang, harga_barang, created_by, updated_by, date_created, last_modified)" +
-                "VALUES(?,?,?,?,?,?,?)";
+                "INSERT INTO stok(id, kode_barang, stok_barang, date_created, last_modified, created_by, updated_by)" +
+                        "VALUES(?,?,?,?,?,?,?)";
         return connection.flatMap(conn -> {
             Optional<Integer> generatedId = Optional.empty();
             try {
                 PreparedStatement ps = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-                ps.setString(1,barang.getKodeBarang());
-                ps.setString(2,barang.getNamaBarang());
-                ps.setInt(3,barang.getHargaBarang());
-                ps.setString(4,barang.getCreatedBy());
-                ps.setString(5,barang.getUpdatedBy());
-                ps.setDate(6,new Date(barang.getDateCreated().getTime()));
-                ps.setDate(7,new Date(barang.getLastModified().getTime()));
+                ps.setInt(1,stok.getId());
+                ps.setString(2,stok.getKodeBarang());
+                ps.setInt(3,stok.getStokBarang());
+                ps.setString(4,stok.getCreatedBy());
+                ps.setString(5,stok.getUpdatedBy());
+                ps.setDate(6,new Date(stok.getDateCreated().getTime()));
+                ps.setDate(7,new Date(stok.getLastModified().getTime()));
                 int numberOfInsertedRows = ps.executeUpdate();
                 if(numberOfInsertedRows > 0) {
                     ResultSet rs = ps.getGeneratedKeys();
@@ -80,12 +80,12 @@ public class BarangDao implements Dao<Barang, Integer> {
     }
 
     @Override
-    public void update(Barang barang) {
+    public void update(Stok stok) {
 
     }
 
     @Override
-    public void delete(Barang barang) {
+    public void delete(Stok stok) {
 
     }
 }
