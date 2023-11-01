@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb1f093-ae89-4252-be8e-86dc299e212e" name="Changes" comment="Membuat StokDao pertemuan-10">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/smk/cashier/service/StokServiceTest.java" afterDir="false" />
+    <list default="true" id="7bb1f093-ae89-4252-be8e-86dc299e212e" name="Changes" comment="Membuat Update Barang pertemuan-11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/BarangDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/BarangDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/StokDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smk/cashier/dao/StokDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/smk/cashier/service/BarangServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/smk/cashier/service/BarangServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -26,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pertemuan-10" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,11 +59,22 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pertemuan-11&quot;
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;pertemuan-12&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BarangServiceTest.updateBarangByKodeBarang">
-    <configuration name="BarangServiceTest.getDataById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.smk.cashier.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BarangServiceTest.searchBarang">
+    <configuration name="BarangServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cashier_6" />
       <extension name="coverage">
         <pattern>
@@ -72,60 +84,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
       <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
-      <option name="METHOD_NAME" value="getDataById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BarangServiceTest.saveBarangToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cashier_6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.smk.cashier.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
-      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
-      <option name="METHOD_NAME" value="saveBarangToDatabase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BarangServiceTest.updateBarangByKodeBarang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cashier_6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.smk.cashier.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
-      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
-      <option name="METHOD_NAME" value="updateBarangByKodeBarang" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cashier_6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.smk.cashier.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
-      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.StockServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.smk.cashier.service in Cashier_6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BarangServiceTest.addBarang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cashier_6" />
       <extension name="coverage">
         <pattern>
@@ -134,18 +98,68 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
+      <option name="METHOD_NAME" value="addBarang" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarangServiceTest.deleteBarang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cashier_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.smk.cashier.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
+      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
+      <option name="METHOD_NAME" value="deleteBarang" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarangServiceTest.getBarangList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cashier_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.smk.cashier.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
+      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
+      <option name="METHOD_NAME" value="getBarangList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarangServiceTest.searchBarang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cashier_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.smk.cashier.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.smk.cashier.service" />
+      <option name="MAIN_CLASS_NAME" value="com.smk.cashier.service.BarangServiceTest" />
+      <option name="METHOD_NAME" value="searchBarang" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BarangServiceTest.updateBarangByKodeBarang" />
-        <item itemvalue="JUnit.StockServiceTest" />
-        <item itemvalue="JUnit.com.smk.cashier.service in Cashier_6" />
-        <item itemvalue="JUnit.BarangServiceTest.getDataById" />
-        <item itemvalue="JUnit.BarangServiceTest.saveBarangToDatabase" />
+        <item itemvalue="JUnit.BarangServiceTest.searchBarang" />
+        <item itemvalue="JUnit.BarangServiceTest.deleteBarang" />
+        <item itemvalue="JUnit.BarangServiceTest" />
+        <item itemvalue="JUnit.BarangServiceTest.addBarang" />
+        <item itemvalue="JUnit.BarangServiceTest.getBarangList" />
       </list>
     </recent_temporary>
   </component>
@@ -174,23 +188,39 @@
       <option name="project" value="LOCAL" />
       <updated>1693465580432</updated>
     </task>
-    <task id="LOCAL-00003" summary="Membuat barangdao pertemuan-9">
+    <task id="LOCAL-00003" summary="Create UserService">
       <option name="closed" value="true" />
-      <created>1697009796316</created>
+      <created>1694001164478</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1697009796316</updated>
+      <updated>1694001164478</updated>
     </task>
-    <task id="LOCAL-00004" summary="Membuat StokDao pertemuan-10">
+    <task id="LOCAL-00004" summary="Create Barang Service">
       <option name="closed" value="true" />
-      <created>1697636984431</created>
+      <created>1694609245852</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1697636984431</updated>
+      <updated>1694609245852</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create findByName Service">
+      <option name="closed" value="true" />
+      <created>1695217415468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695217415468</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create StokService">
+      <option name="closed" value="true" />
+      <created>1695805671649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695805671649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,9 +237,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First time commit" />
     <MESSAGE value="Pertemuan ke 4" />
-    <MESSAGE value="FUCK YOU NIGGGEEERRRR PERTEMUAN-9" />
-    <MESSAGE value="Membuat barangdao pertemuan-9" />
-    <MESSAGE value="Membuat StokDao pertemuan-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Membuat StokDao pertemuan-10" />
+    <MESSAGE value="Create UserService" />
+    <MESSAGE value="Create Barang Service" />
+    <MESSAGE value="Create findByName Service" />
+    <MESSAGE value="Create StokService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create StokService" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/smk/cashier/service/UserServiceTest.java</url>
+          <line>13</line>
+          <properties class="com.smk.cashier.service.UserServiceTest" method="getUserList">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
